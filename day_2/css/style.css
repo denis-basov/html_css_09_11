@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* все элементы */
+*{
+    /* margin: 0; */
+}
+
+
+body{
+    color: rgb(146, 96, 196);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+h2{
+    color: sandybrown;
+}
+
+p{
+    color: brown;
+    background-color: aquamarine;
+}
+
+.par-2{
+    color: blueviolet;
+}
+
+
+/* по ID */
+#head-1{
+    color: aqua;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+#head-1:hover{
+    color: rgb(84, 161, 161);
+    background-color: #d0804f;
+}
+
+/* по классу */
+.head{
+   color:#d0804f; 
+}
+
+/* по названию тега */
+h1{
+    /* color: blue !important; */
+    background-color: #41814b;
+}
+
+
+/**************************************************/
+
+/* стили для .cat */
+.cat{
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 8px;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-style: italic; */
+
+    position: relative;
+    transition: all 0.4s;
+}
+
+.cat:hover{
+    box-shadow: 8px 6px 17px -3px rgba(0, 0, 0, 0.753);
+}
+
+/* стили для заголовка h2 внутри .cat*/
+.cat h2{
+    /* border: 2px solid rgb(0, 8, 255); */
+    color: #41814b;
+    margin: 10px 20px 15px 25px;
+    font-size: 40px;
+}
+
+.cat h2 span{
+    font-style: italic;
+    color: #d0804f;
+    font-weight: 200;
+}
+
+.cat p{
+    background-color: transparent;
+    color: #41814b;
+    margin: 10px 20px;
+}
+
+.cat img{
+    /* border: 3px dotted gray; */
+    border-radius: 50%;
+    border: 5px solid silver;
+    width: 100%;
+    /* display: none; */
+}
+
+.cat .absolute{
+    position: absolute;
+    background-color: #f1b792;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:rgb(40, 40, 152);
+
+    /* top: -5px;
+    right: -5px; */
+
+    /* расположение по центру */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* абсолютное позиционирование */
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: #f1c0a2;
+    margin-top: 50px;
+
+    position: relative;
+}
+
+.container .child,
+.container .child2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #bb7a52;
+}
+
+.container .child{
+    top: -50px;
+    right: -50px;
+}
+
+.container .child2{
+    background-color: #52bb73;
+
+    right: -50px;
+    bottom: -50px;
+}
+
+
+/* hover */
+
+.head-3{
+    color: #9f4343;
+    /* background-image: url("../img/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+/* стили при наведении мыши */
+.head-3:hover{
+    color: orange;
+    background-color: #41814b;
+}
+
+
+/* главная навигация */
+.main-nav{
+    background-color: aliceblue;
+    padding: 20px 40px;
+}
+
+.main-nav span{
+    background-color: rgb(186, 202, 215);
+    padding: 10px 20px;
+    margin-right: 20px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+.main-nav span:hover{
+    border-radius: 8px;
+    background-color: rgb(163, 195, 220);
+    color: rgb(112, 63, 160);
+    border-bottom: 2px solid rgb(112, 63, 160);
+    border-top: 2px solid rgb(112, 63, 160);
+    cursor: pointer;
+}
+
+.main-nav span:last-child{
+    margin: 0;
+}
+
+
+.active{
+    color: orange !important;
+}
+
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+	background-color:#63b8ee;
+	border-radius:6px;
+	border:1px solid #3866a3;
+	display:inline-block;
+	cursor:pointer;
+	color:#14396a;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7cacde;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+	background-color:#468ccf;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
