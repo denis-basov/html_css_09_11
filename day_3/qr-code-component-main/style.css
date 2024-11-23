@@ -1,0 +1,29 @@
+body{
+    background-color: hsl(212, 45%, 89%);
+}
+
+.q-code{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 150px auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.q-code img{
+    width: 60%;
+    border-radius: 8px;
+}
+
+.q-code h2{
+
+}
+
+.q-code p{
+    color: hsl(216, 15%, 48%);
+}

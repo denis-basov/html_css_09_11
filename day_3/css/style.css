@@ -1,0 +1,210 @@
+.reg-form{
+    background-color: aliceblue;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    border: 2px solid rgb(215, 234, 250);
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.reg-form .input-btn{
+    margin-bottom: 0;
+}
+
+.reg-form .input-field label{
+    /* display: inline-block;
+    width: 200px;
+    text-align: right; */
+}
+
+
+/*  float  */
+.float{
+    background-color: aliceblue;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.float img{
+    width: 200px;
+    float: right;
+    margin-left: 15px;
+    border-radius: 7px;
+}
+
+.float p{
+    margin: 0;
+}
+
+
+/* articles */
+.articles{
+    background-color: aliceblue;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+.articles .article{
+    background-color: rgb(210, 230, 248);
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px;
+    display: inline-block;
+}
+
+
+/* flexbox */
+
+/* контейнер */
+.flex-container{
+    background-color: aliceblue;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1400px;
+    padding: 20px;
+    height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* дочерние элементы */
+.flex-container .article{
+    background-color: rgb(210, 230, 248);
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px;
+}
+
+/* свойства для одного элемента */
+.flex-container .article-1{
+    background-color: rgb(211, 248, 210);
+    align-self: flex-start;
+}
+
+.flex-container .article-2{
+    background-color: rgb(211, 248, 210);
+    align-self: flex-end;
+}
+
+/* контейнер */
+.flex{
+    max-width: 1000px;
+    background-color: beige;
+    padding: 20px;
+    margin: 10px auto;
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-direction: column; */
+}
+
+/* дочерние элементы */
+.flex div{
+    background-color: rgb(240, 240, 171);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+/* навигация */
+nav.main-nav{
+    max-width: 1200px;
+    padding: 10px 20px;
+    background-color: cornsilk;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.main-nav .nav{
+   background-color: rgb(236, 221, 158); 
+   list-style-type: none;
+   padding: 20px 40px;
+   display: flex;
+   gap: 20px;
+}
+
+nav.main-nav .nav li{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: all 0.5s;
+}
+
+nav.main-nav .nav li a{
+    color: red;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav.main-nav .nav li:hover{
+    background-color: rgb(220, 237, 252);
+}
+
+
+/*  grid  */
+.grid{
+    max-width: 1000px;
+    background-color: beige;
+    padding: 20px;
+    margin: 10px auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* количество и размер колонок */
+    /* grid-template-rows: 100px; */
+    gap: 20px;
+    /* justify-items: center;
+    align-items: center; */
+}
+
+.grid div{
+    background-color: rgb(240, 240, 171);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.grid .element-1{
+    background-color: rgb(178, 171, 240);
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+
+/* text-info */
+.text-info{
+    max-width: 1200px;
+    height: 1600px;
+    padding: 30px;
+    margin: 20px auto;
+    background-image: url("../img/philipp-upR8raSXvwg-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 350px 350px 350px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.text-info p{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkblue;
+    background-color: rgba(240, 248, 255, 0.3);
+    padding: 20px;
+}
