@@ -1,0 +1,40 @@
+@media (max-width: 1020px){
+    .grid{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+@media (max-width: 800px){
+    html{
+        font-size: 50%;
+    }
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .grid .box-10{
+        grid-column: 2/5;
+    }
+}
+
+@media (max-width: 500px){
+    html{
+        font-size: 35%;
+    }
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid .box-10{
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 350px){
+    html{
+        font-size: 62.5%;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
